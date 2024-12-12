@@ -50,6 +50,11 @@ Terminal 3 : Ouvrez un nouveau terminal et exécuter les commandes suivantes :
     roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
 après l'exécution de cette ligne , RVIZ sera lancé, maintenat à l'aide de teleop déjà lancée dans terminal 2 vous devez parcourir le Tunnel afin de créer une map de ce dernier 
+.. image:: pictures/SLAM_Map_Tunnel.png
+   :alt: Le Map du Tunnel 
+   :width: 400
+   :align: center
+
 
 
 
