@@ -40,7 +40,7 @@ faites avancer votre Robot jusqu'à l'entrée du Tunnel
    :width: 400
    :align: center
 
-2. SLAM Node 
+3. SLAM Node 
 ~~~~~~~~~~~~~~~~~~~~~~~ 
 Terminal 3 : Ouvrez un nouveau terminal et exécuter les commandes suivantes :
 
@@ -50,14 +50,24 @@ Terminal 3 : Ouvrez un nouveau terminal et exécuter les commandes suivantes :
     roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
 après l'exécution de cette ligne , RVIZ sera lancé, maintenat à l'aide de teleop déjà lancée dans terminal 2 vous devez parcourir le Tunnel afin de créer une map de ce dernier 
+
 .. image:: pictures/SLAM_Map_Tunnel.png
    :alt: Le Map du Tunnel 
    :width: 400
    :align: center
 
+Après avoir crée le map du Tunnel , vous pouvez l'enregistrer à l'aide de la ligne suivante :
 
+.. code-block:: bash
 
+    rosrun map_server map_saver -f ~/catkin_ws/src//turtlebot3_autorace/turtlebot3_autorace_driving/maps/
+    
+suite à l'enregistrement du map vous devez avoir les deux fichiers dans le chemin spécifié
 
+.. image:: pictures/SLAM_Map_Tunnel.png
+   :alt: Le Map du Tunnel 
+   :width: 400
+   :align: center
 
 
 
