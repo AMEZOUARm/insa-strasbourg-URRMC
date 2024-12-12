@@ -64,10 +64,12 @@ Après avoir crée le map du Tunnel , vous pouvez l'enregistrer à l'aide de la 
     
 suite à l'enregistrement du map vous devez avoir les deux fichiers dans le chemin spécifié
 
-.. image:: pictures/SLAM_Map_Tunnel.png
+.. image:: pictures/Enregistrement_Map.png
    :alt: Le Map du Tunnel 
    :width: 400
    :align: center
+
+
 
 
 
