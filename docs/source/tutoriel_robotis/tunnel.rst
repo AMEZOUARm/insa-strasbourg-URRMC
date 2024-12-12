@@ -15,6 +15,8 @@ création du map :
 ------------
 tout d'abord nous allons commencer par créer une map de notre tunnel, et pour faire ca nous allons utiliser la tehcnique SLAM(Simultaneous Localization and Mapping). 
 
+1. Lancer Gazebo
+~~~~~~~~~~~~~~~~ 
 
 
 
