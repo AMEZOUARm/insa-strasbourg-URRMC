@@ -22,7 +22,7 @@ Terminal 1 : Ouvrez un terminal et exécutez la commande suivante pour lancer l'
 .. code-block:: bash
 
     export TURTLEBOT3_MODEL=burger
-    roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
+    roslaunch turtlebot3_gazebo turtlebot3_circuit_competition.launch
 
 2. Lancer Teleoperation
 ~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -69,12 +69,60 @@ suite à l'enregistrement du map vous devez avoir les deux fichiers dans le chem
    :width: 400
    :align: center
 
+avant de passer au test vous devez reconstruire votre espace de travail , si vous travaillez sur Catkin_ws :
+
+.. code-block:: bash
+
+    cd ~/catkin_ws
+    catkin_make
+
+maintenant vous fermez tous les terminaux .
 
 
+Exécution de la mission Tunnel  :
+------------------------------
 
 
+1. Lancer Gazebo
+~~~~~~~~~~~~~~~~ 
 
+dans un nouveau terminal , pour lancer Gazebo 
 
+.. code-block:: bash
+
+    export TURTLEBOT3_MODEL=burger
+    roslaunch turtlebot3_gazebo turtlebot3_circuit_competition.launch
+
+2.lancer intrinsic calibration 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dans un nouveau terminal , pour lancer la calibration 
+
+.. code-block:: bash
+
+        roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
+
+3. Lancer Teleoperation
+~~~~~~~~~~~~~~~~~~~~~~~ 
+ouvrir un nouveau terminal , pour rendre votre Robot devant le panneau "Tunnel"
+
+.. code-block:: bash
+
+    export TURTLEBOT3_MODEL=burger
+    roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+4.lancer la node autorace_core 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dans un nouveau terminal , lancer la node autorace_node avec la mission tunnel 
+
+.. code-block:: bash
+
+    roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch mission:=tunnel
+
+et dans un dernier terminal :
+
+.. code-block:: bash
+
+    rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 
 
 
