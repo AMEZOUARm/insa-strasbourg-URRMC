@@ -20,9 +20,9 @@ Tout d'abord nous allons commencer par créer une map de notre tunnel, et pour f
 Ouvrez un terminal et exécutez la commande suivante pour lancer l'environnement Gazebo :
 
 .. code-block:: bash
+
     export TURTLEBOT3_MODEL=burger
-.. code-block:: bash
- roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
+    roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 
 
 
