@@ -35,7 +35,10 @@ Ouvrez un nouveau terminal et exécuter les commandes suivantes  :
 
 faites avancer votre Robot jusqu'à l'entrée du Tunnel 
 
-
+.. image:: pictures/Robot_a_entree_Tunnel.png
+   :alt: Le Robot est à l'entrée du Tunnel
+   :width: 600
+   :align: center
 
 
 
