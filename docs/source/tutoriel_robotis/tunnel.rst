@@ -24,7 +24,16 @@ Ouvrez un terminal et exécutez la commande suivante pour lancer l'environnement
     export TURTLEBOT3_MODEL=burger
     roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 
+2. Lancer Teleoperation
+~~~~~~~~~~~~~~~~~~~~~~~ 
+Ouvrez un nouveau terminal et exécuter les commandes suivantes  :
 
+.. code-block:: bash
+
+    export TURTLEBOT3_MODEL=burger
+    roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+faites avancer votre Robot jusqu'à l'entrée du Tunnel 
 
 
 
